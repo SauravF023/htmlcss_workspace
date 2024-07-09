@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #D8BFD8;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+        }
+        .sidebar h1 {
+            color: #7B68EE;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            margin: 10px 0;
+        }
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .main-content .search-bar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+        .main-content .search-bar input {
+            padding: 5px;
+        }
+        .customers {
+            width: 100%;
+        }
+        .customers table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .customers th, .customers td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .customers th {
+            background-color: #cd3636;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .pagination button {
+            background-color: #D8BFD8;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .pagination button.active {
+            background-color: #7B68EE;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Workspace</h1>
+        <a href="Workspace(homepage).html">Home</a>
+        <a href="customer.html">Customers</a>
+        <a href="Departments.html">Departments</a>
+        <a href="#">Media</a>
+        <a href="Myaccount.html">My Account</a>
+    </div>
+    <div class="main-content">
+        <div class="search-bar">
+            <input type="text" placeholder="Search in Customers">
+        </div>
+        <div class="customers">
+            <h2>Customers</h2>
+            <table>
+                <tr>
+                    <th>Department ID</th>
+                    <th>Department incharge</th>
+                    <th>Name</th>
+                    <th>Size</th>
+                    <th>Total Media Size</th>
+                </tr>
+                <tr>
+                    <td>JHTYJ65</td>
+                    <td>UHDG5</td>
+                    <td>JOHN</td>
+                    <td>23</td>
+                    <td>2 GB</td>
+                </tr>
+                <tr>
+                    <td>JHSAG46</td>
+                    <td>ASDFJ</td>
+                    <td>JANE</td>
+                    <td>45</td>
+                    <td>0.4 GB</td>
+                </tr>
+                <tr>
+                    <td>ASJHGA17</td>
+                    <td>SAFEF</td>
+                    <td>BOB</td>
+                    <td>76</td>
+                    <td>200 GB</td>
+                </tr>
+                <tr>
+                    <td>KASHKD35</td>
+                    <td>AFEFE</td>
+                    <td>MARY</td>
+                    <td>87</td>
+                    <td>50 GB</td>
+                </tr>
+                <tr>
+                    <td>SAKHKD38</td>
+                    <td>REYER</td>
+                    <td>KARAN</td>
+                    <td>76</td>
+                    <td>45 GB</td>
+                </tr>
+                <tr>
+                    <td>KOHJASUJ33</td>
+                    <td>HUHGF</td>
+                    <td>CHRISBY</td>
+                    <td>78</td>
+                    <td>500 GB</td>
+                </tr>
+                <!-- Add more rows as necessary -->
+            </table>
+        </div>
+        <div class="pagination">
+            <button>&lt;</button>
+            <button class="active">1</button>
+            <button>&gt;</button>
+        </div>
+    </div>
+</body>
+</html>
