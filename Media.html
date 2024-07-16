@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace Media</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #e6c7e6;
+            padding: 20px;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #e6c7e6;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            color: #663366;
+        }
+        .search-bar {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .menu-item {
+            margin-bottom: 10px;
+            color: #663366;
+        }
+        .media-section {
+            margin-bottom: 20px;
+        }
+        .media-title {
+            background-color: #fffacd;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .media-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .media-item img {
+            width: 50px;
+            height: 50px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            padding: 10px;
+            background-color: #e6c7e6;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Workspace</h1>
+            <a href="Workspace(homepage).html">Home</a>
+            <a href="customer.html">Customers</a>
+            <a href="Departments.html">Departments</a>
+            <a href="Media.html">Media</a>
+        </div>
+        <div class="main-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search in Customers">
+            </div>
+            <div class="media-content">
+                <div class="media-section">
+                    <div class="media-title">IMAGES</div>
+                    <div class="media-grid">
+                        <div class="media-item"><img src="https://emeritus.org/wp-content/uploads/2023/11/tech.png.webp.jpg" alt="Gear Icon" height = "30px"></div>
+                        <div class="media-item"><img src="gear-icon.png" alt="Gear Icon"></div>
+                        <div class="media-item"><img src="gear-icon.png" alt="Gear Icon"></div>
+                        <div class="media-item"><img src="gear-icon.png" alt="Gear Icon"></div>
+                        <div class="media-item"><img src="gear-icon.png" alt="Gear Icon"></div>
+                        <div class="media-item"><img src="gear-icon.png" alt="Gear Icon"></div>
+                    </div>
+                </div>
+                <div class="media-section">
+                    <div class="media-title">VIDEO</div>
+                    <div class="media-grid">
+                        <div class="media-item"><img src="gear-video-icon.png" alt="Gear Video Icon"></div>
+                        <div class="media-item"><img src="gear-video-icon.png" alt="Gear Video Icon"></div>
+                        <div class="media-item"><img src="gear-video-icon.png" alt="Gear Video Icon"></div>
+                    </div>
+                </div>
+                <div class="media-section">
+                    <div class="media-title">AUDIO</div>
+                    <div class="media-grid">
+                        <div class="media-item"><img src="gear-audio-icon.png" alt="Gear Audio Icon"></div>
+                        <div class="media-item"><img src="gear-audio-icon.png" alt="Gear Audio Icon"></div>
+                        <div class="media-item"><img src="gear-audio-icon.png" alt="Gear Audio Icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="Myaccount.html">My Account</a>
+    </div>
+</body>
+</html>
